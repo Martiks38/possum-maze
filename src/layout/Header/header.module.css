@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: var(--header-height);
+  padding: 0.5em 2em;
+  background: var(--color-2);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+  max-height: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}

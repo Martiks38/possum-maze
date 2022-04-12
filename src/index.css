@@ -1,3 +1,18 @@
+:root {
+  --header-height: 50px;
+  --color-1: #2a3340;
+  --color-11: #1a222e;
+  --color-2: #f2bc8d;
+  --color-3: #733f2d;
+  --color-4: #f28066;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +22,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* .The-city-of-Eitri-(pt3.)-1-hex { color: #2A3340; }
+.The-city-of-Eitri-(pt3.)-2-hex { color: #F2BC8D; }
+.The-city-of-Eitri-(pt3.)-3-hex { color: #733F2D; }
+.The-city-of-Eitri-(pt3.)-4-hex { color: #F28066; }
+.The-city-of-Eitri-(pt3.)-5-hex { color: #BF4F45; } */

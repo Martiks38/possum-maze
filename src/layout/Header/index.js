@@ -8,11 +8,12 @@ function Header() {
     <>
       <header className={styles.header}>
         <Link to="/">
-          <img src="/possum-maze.webp" alt="logo" className={styles.img} />
+          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          <a className={styles.a}>
+            <img src="/possum-maze.webp" alt="logo" />
+          </a>
         </Link>
-        <div className={styles.content}>
-          <Navbar />
-        </div>
+        <Navbar />
       </header>
     </>
   )

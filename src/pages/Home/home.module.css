@@ -1,0 +1,37 @@
+.img {
+  display: block;
+  max-width: 250px;
+  width: 100%;
+  margin: 3em auto;
+}
+
+.nav {
+  display: flex;
+  max-width: max-content;
+  gap: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+.button {
+  width: fit-content;
+  padding: 0.4em 1em;
+  background-color: var(--color-2);
+  color: var(--color-11);
+  font-weight: 700;
+  font-size: 1.4em;
+  border-radius: 8px;
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 1.7em;
+  }
+}

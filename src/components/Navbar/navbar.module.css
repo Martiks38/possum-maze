@@ -1,6 +1,5 @@
 .menu {
   display: flex;
-  padding-right: 4em;
   padding-left: 0;
   min-width: fit-content;
   gap: 1em;

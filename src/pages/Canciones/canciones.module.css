@@ -1,0 +1,74 @@
+.cancion {
+  max-width: max-content;
+  min-width: 200px;
+  margin: 1em auto 2em;
+  border: 2px solid var(--color-1);
+  border-radius: 8px;
+}
+
+.cancion h2 {
+  text-align: center;
+}
+
+.cancion h2,
+h3 {
+  margin-left: 1em;
+  text-transform: capitalize;
+}
+
+.cancion blockquote {
+  margin: 0.5em 1em;
+}
+
+.letter {
+  white-space: pre-wrap;
+}
+
+.title {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  min-width: 250px;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1.2em;
+}
+
+.form input {
+  font-size: 1em;
+  padding: 0.4em;
+  border: 2px solid var(--color-1);
+  border-radius: 8px;
+}
+
+.form input:focus {
+  border-color: var(--color-4);
+  outline: none;
+}
+
+.button {
+  width: fit-content;
+  padding: 0.4em 1em;
+  background-color: var(--color-2);
+  color: var(--color-11);
+  border: 2px solid var(--color-1);
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--color-5);
+}
+
+.loader {
+  text-align: center;
+  margin-top: 1em;
+}

@@ -1,11 +1,20 @@
 import React from 'react'
 import LinkBtn from 'components/LinkButton'
 import styles from './home.module.css'
+import { Helmet } from 'react-helmet-async'
 
 function Home() {
   return (
     <>
-      <img src="/presentacion.webp" alt="logo" className={styles.img} />
+      <Helmet>
+        <link rel="prefetch" href="/presentacion.webp" />
+        <link rel="preconnect" href="https://api.lyrics.ovh/v1/" />
+      </Helmet>
+      <img
+        src="/presentacion.webp"
+        alt="Imagen de presentación"
+        className={styles.img}
+      />
       <h1 className={styles.title}>
         <span>Laxy está lista para buscar sobre</span>
       </h1>

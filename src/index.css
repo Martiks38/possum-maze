@@ -2,9 +2,11 @@
   --header-height: 50px;
   --color-1: #2a3340;
   --color-11: #1a222e;
+  --color-white: #fff;
   --color-2: #f2bc8d;
   --color-3: #733f2d;
   --color-4: #f28066;
+  --color-5: #bf4f45;
 }
 
 *,
@@ -41,8 +43,8 @@ a {
   align-items: center;
 }
 
-/* .The-city-of-Eitri-(pt3.)-1-hex { color: #2A3340; }
-.The-city-of-Eitri-(pt3.)-2-hex { color: #F2BC8D; }
-.The-city-of-Eitri-(pt3.)-3-hex { color: #733F2D; }
-.The-city-of-Eitri-(pt3.)-4-hex { color: #F28066; }
-.The-city-of-Eitri-(pt3.)-5-hex { color: #BF4F45; } */
+.image_search {
+  display: block;
+  max-width: 150px;
+  margin: 1em auto;
+}

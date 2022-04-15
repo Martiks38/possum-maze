@@ -20,6 +20,16 @@ h3 {
   margin: 0.5em 1em;
 }
 
+.cancion p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.datos {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
 .letter {
   white-space: pre-wrap;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './canciones.module.css'
 
-function Results({ data, setData }) {
+function ResultSong({ data, setData }) {
   let letter
 
   if (data?.lyrics) {
@@ -12,11 +12,11 @@ function Results({ data, setData }) {
   return (
     <>
       <h1>Resultado</h1>
+      <button className={styles.button} onClick={() => setData({})}>
+        Buscar más canciones
+      </button>
       {data.hasOwnProperty('lyrics') ? (
         <>
-          <button className={styles.button} onClick={() => setData({})}>
-            Buscar más canciones
-          </button>
           <article className={styles.cancion}>
             <h2>{data.artist}</h2>
             <h3>{data.title}</h3>
@@ -37,4 +37,4 @@ function Results({ data, setData }) {
   )
 }
 
-export default Results
+export default ResultSong

@@ -6,10 +6,8 @@ function Main({ children }) {
   return (
     <>
       <Helmet>
-        <link
-          rel="preconnect"
-          href="https://www.theaudiodb.com/api/v1/json/2/search.php?s="
-        />
+        <link rel="preconnect" href="https://api.lyrics.ovh" />
+        <link rel="preconnect" href="https://api.tvmaze.com" />
       </Helmet>
       <main className={styles.main}>{children}</main>
     </>

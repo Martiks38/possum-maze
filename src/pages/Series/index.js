@@ -3,6 +3,7 @@ import Loader from 'components/Loader'
 import styles from './series.module.css'
 import { getShows } from 'services/getShows'
 import ResultShow from './results'
+import { Helmet } from 'react-helmet-async'
 
 function Series() {
   const [loader, setLoader] = useState(false)
@@ -19,6 +20,35 @@ function Series() {
 
   return (
     <>
+      <Helmet>
+        <title>Possum Maze | Shows</title>
+
+        <meta
+          name="description"
+          content="Laxy te ayudará a buscar una lista de tu serie favorita."
+        />
+
+        <meta name="twitter:title" content="Possum Maze | Shows" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:description"
+          content="Laxy te ayudará a buscar una lista de tu serie favorita."
+        />
+        <meta name="twitter:site" content="@possum-maze" />
+        <meta
+          name="twitter:image"
+          content="http://localhost:3000/presentacion.webp"
+        />
+        <meta name="twitter:url" content="http://localhost:3000/series" />
+
+        <meta property="og:title" content="Possum Maze | Shows" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Laxy te ayudará a buscar una lista de tu serie favorita."
+        />
+        <link rel="canonical" href="http://localhost:3000/" />
+      </Helmet>
       <img
         src="/presentacion.webp"
         alt="Imagen de presentación"

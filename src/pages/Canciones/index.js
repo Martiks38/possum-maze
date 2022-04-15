@@ -3,6 +3,7 @@ import { getLyrics } from 'services/getLyrics'
 import Loader from 'components/Loader'
 import styles from './canciones.module.css'
 import ResultSong from './results'
+import { Helmet } from 'react-helmet-async'
 
 function Canciones() {
   const [loader, setLoader] = useState(false)
@@ -20,6 +21,35 @@ function Canciones() {
 
   return (
     <>
+      <Helmet>
+        <title>Possum Maze | Songs</title>
+
+        <meta
+          name="description"
+          content="Laxy te ayudará a buscar la letra de la canción."
+        />
+
+        <meta name="twitter:title" content="Possum Maze | Songs" />
+        <meta name="twitter:card" content="summary" />
+        <meta
+          name="twitter:description"
+          content="Laxy te ayudará a buscar la letra de la canción."
+        />
+        <meta name="twitter:site" content="@possum-maze" />
+        <meta
+          name="twitter:image"
+          content="http://localhost:3000/presentacion.webp"
+        />
+        <meta name="twitter:url" content="http://localhost:3000/canciones" />
+
+        <meta property="og:title" content="Possum Maze | Songs" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Laxy te ayudará a buscar la letra de la canción."
+        />
+        <link rel="canonical" href="http://localhost:3000/" />
+      </Helmet>
       <img
         src="/presentacion.webp"
         alt="Imagen de presentación"

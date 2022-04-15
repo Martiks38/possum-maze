@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import UpButton from 'components/UpButton'
 import styles from './series.module.css'
 
 function ResultShow({ data, setData }) {
+  const [viewUpBtn, setViewUpBtn] = useState(false)
+
   let dataKeys = Object.values(data)
   dataKeys.pop()
+
+  useEffect(() => {
+    const scrollController = () => {
+      let offsetY = window.scrollY
+
+      if (offsetY > 1200) {
+        setViewUpBtn(true)
+      } else {
+        setViewUpBtn(false)
+      }
+    }
+
+    window.addEventListener('scroll', scrollController)
+    return () => window.removeEventListener('scroll', scrollController)
+  }, [])
 
   return (
     <>
@@ -46,6 +64,7 @@ function ResultShow({ data, setData }) {
           </p>
         </section>
       )}
+      {viewUpBtn && <UpButton setViewUpBtn={setViewUpBtn} />}
     </>
   )
 }

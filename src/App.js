@@ -7,6 +7,7 @@ import Header from './layout/Header'
 import Home from './pages/Home'
 import Canciones from 'pages/Canciones'
 import Series from 'pages/Series'
+import Page404 from 'pages/Page404'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/" component={Home} />
             <Route path="/canciones" component={Canciones} />
             <Route path="/series" component={Series} />
+            <Route component={Page404} />
           </Switch>
         </Main>
       </HelmetProvider>

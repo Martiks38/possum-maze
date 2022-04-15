@@ -6,6 +6,7 @@ import Footer from './layout/Footer'
 import Header from './layout/Header'
 import Home from './pages/Home'
 import Canciones from 'pages/Canciones'
+import Series from 'pages/Series'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Switch>
             <Route path="/" component={Home} />
             <Route path="/canciones" component={Canciones} />
+            <Route path="/series" component={Series} />
           </Switch>
         </Main>
       </HelmetProvider>

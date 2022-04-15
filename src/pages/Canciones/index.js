@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { getLyrics } from 'services/getLyrics'
 import Loader from 'components/Loader'
 import styles from './canciones.module.css'
-import Results from './results'
+import ResultSong from './results'
 
 function Canciones() {
   const [loader, setLoader] = useState(false)
@@ -27,7 +27,7 @@ function Canciones() {
       />
       {Object.keys(data).length === 0 ? (
         <>
-          <h1 className={styles.title}>Laxy Seeker Songs</h1>
+          <h1 className={styles.title}>Buscar la canción</h1>
           <form id="search" onSubmit={handleSubmit} className={styles.form}>
             <input
               type="text"
@@ -59,7 +59,7 @@ function Canciones() {
           )}
         </>
       ) : (
-        <Results data={data} setData={setData} />
+        <ResultSong data={data} setData={setData} />
       )}
     </>
   )

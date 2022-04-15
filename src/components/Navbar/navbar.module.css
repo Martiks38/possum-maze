@@ -1,0 +1,30 @@
+.menu {
+  display: flex;
+  padding-left: 0;
+  min-width: fit-content;
+  gap: 1em;
+  list-style: none;
+}
+
+.panelMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-5);
+  border-radius: 10px;
+  transform: scale(0.75);
+}
+
+.linkBtn {
+  display: block;
+  padding: 0.1em 1em;
+  color: var(--color-11);
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.linkBtn:hover {
+  background: var(--color-4);
+  border-radius: 8px;
+}

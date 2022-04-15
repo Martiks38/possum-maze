@@ -1,0 +1,16 @@
+.main {
+  width: 80vw;
+  flex-grow: 1;
+}
+
+.img {
+  display: block;
+  max-width: 250px;
+  width: 100%;
+  margin: 3em auto;
+}
+
+.img_search {
+  margin: 1em auto;
+  max-width: 150px;
+}

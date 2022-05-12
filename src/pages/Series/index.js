@@ -28,26 +28,12 @@ function Series() {
           content="Laxy te ayudará a buscar una lista de tu serie favorita."
         />
 
-        <meta name="twitter:title" content="Possum Maze | Shows" />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          name="twitter:description"
-          content="Laxy te ayudará a buscar una lista de tu serie favorita."
-        />
-        <meta name="twitter:site" content="@possum-maze" />
-        <meta
-          name="twitter:image"
-          content="http://localhost:3000/presentacion.webp"
-        />
-        <meta name="twitter:url" content="http://localhost:3000/series" />
-
         <meta property="og:title" content="Possum Maze | Shows" />
-        <meta property="og:type" content="website" />
         <meta
           property="og:description"
           content="Laxy te ayudará a buscar una lista de tu serie favorita."
         />
-        <link rel="canonical" href="http://localhost:3000/" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <img
         src="/presentacion.webp"

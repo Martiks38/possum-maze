@@ -7,7 +7,6 @@ function Home() {
   return (
     <>
       <Helmet>
-        <link rel="prefetch" href="/presentacion.webp" />
         <link rel="preconnect" href="https://api.lyrics.ovh/v1/" />
       </Helmet>
       <img

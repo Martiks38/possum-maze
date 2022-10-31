@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { Suspense } from 'react'
+
 import { Route, Switch } from 'wouter'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
+
 import Main from './layout/Main'
 import Footer from './layout/Footer'
 import Header from './layout/Header'
-import Home from './pages/Home'
+
 import Canciones from 'pages/Canciones'
 import Series from 'pages/Series'
 import Page404 from 'pages/Page404'
+
+import Loader from 'components/Loader'
+
+const Home = React.lazy(() => import('./pages/Home'))
 
 function App() {
   return (
@@ -24,12 +30,20 @@ function App() {
           />
         </Helmet>
         <Main>
-          <Switch>
-            <Route path="/" component={Home} />
-            <Route path="/canciones" component={Canciones} />
-            <Route path="/series" component={Series} />
-            <Route component={Page404} />
-          </Switch>
+          <Suspense
+            fallback={
+              <div className="loaderPage">
+                <Loader />
+              </div>
+            }
+          >
+            <Switch>
+              <Route path="/" component={Home} />
+              <Route path="/canciones" component={Canciones} />
+              <Route path="/series" component={Series} />
+              <Route component={Page404} />
+            </Switch>
+          </Suspense>
         </Main>
       </HelmetProvider>
       <Footer />

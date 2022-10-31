@@ -52,6 +52,17 @@ a {
   margin: 1em auto;
 }
 
+.loaderPage svg {
+  --sizeLoader: 5rem;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: var(--sizeLoader);
+  width: var(--sizeLoader);
+}
+
 @media (prefers-reduced-motion) {
   html {
     scroll-behavior: auto;
